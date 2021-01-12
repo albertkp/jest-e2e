@@ -1,0 +1,30 @@
+{
+  "name": "Jest-Selenium-Webdriver-Test",
+  "version": "0.1.0",
+  "description": "Executing Our First Jest Automation Test Script with Selenium JavaScript Testing on Lambdatest",
+  "keywords": [
+    "javascript",
+    "selenium",
+    "tdd",
+    "local",
+    "test",
+    "jest"
+  ],
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "jest",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "~22.1.4",
+    "jest-environment-webdriver": "*",
+    "jest-screenshot-reporter": "*"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "./jasmine.config.js",
+    "testEnvironment": "jest-environment-webdriver",
+    "testEnvironmentOptions": {
+      "browser": "chrome"
+    }
+  }
+}
